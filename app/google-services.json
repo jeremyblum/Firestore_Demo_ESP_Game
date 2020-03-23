@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "87565344489",
+    "firebase_url": "https://esp-game-1e5ad.firebaseio.com",
+    "project_id": "esp-game-1e5ad",
+    "storage_bucket": "esp-game-1e5ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87565344489:android:6950e7c4da577b89ab9a78",
+        "android_client_info": {
+          "package_name": "edu.psu.jjb24.esp_game_v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87565344489-6bdpqugk7e8e08oie32r39l6a8tht5u1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWVmPEk7UkDHIKpydw_TlOWaV7movW7FA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87565344489-6bdpqugk7e8e08oie32r39l6a8tht5u1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87565344489:android:f21fefd793990c7cab9a78",
+        "android_client_info": {
+          "package_name": "edu.psu.jjb24.firestoredemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87565344489-6bdpqugk7e8e08oie32r39l6a8tht5u1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWVmPEk7UkDHIKpydw_TlOWaV7movW7FA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87565344489-6bdpqugk7e8e08oie32r39l6a8tht5u1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

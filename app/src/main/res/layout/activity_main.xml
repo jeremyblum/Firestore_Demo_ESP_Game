@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
+        android:onClick="startGame"
+        android:text="Start Game"
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toStartOf="@+id/btnJoin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join Game"
+        android:onClick="joinGame"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toTopOf="@+id/btnStart"
+        app:layout_constraintBottom_toBottomOf="@+id/btnStart"
+        app:layout_constraintStart_toEndOf="@+id/btnStart"
+        app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+        />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Game"
+        android:onClick="deleteGame"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toTopOf="@+id/btnStart"
+        app:layout_constraintBottom_toBottomOf="@+id/btnStart"
+        app:layout_constraintStart_toEndOf="@+id/btnJoin"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txtTaboo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="14dp"
+        android:text="Taboo Words"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnJoin" />
+
+    <EditText
+        android:id="@+id/edtGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Word"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toEndOf="@+id/btnGuess"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGuess"
+        app:layout_constraintTop_toTopOf="@+id/btnGuess" />
+
+    <Button
+        android:id="@+id/btnGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="guessWord"
+        android:text="Guess:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTaboo" />
+
+    <ImageView
+        android:id="@+id/imgGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuess"
+        app:srcCompat="@drawable/ic_unknown" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
